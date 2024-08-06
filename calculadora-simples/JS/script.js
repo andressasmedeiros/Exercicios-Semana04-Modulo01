@@ -1,0 +1,20 @@
+function calculadoraSimples (inputNumero1, inputNumero2) {
+    var somaCalculadora = inputNumero1 + inputNumero2
+    return somaCalculadora
+}
+
+function executarFormulario(event){
+
+    event.preventDefault()
+
+    var inputNumero1 = parseFloat(document.getElementById('inputNumero1').value)
+    var inputNumero2 = parseFloat(document.getElementById('inputNumero2').value)
+ 
+
+    alert(calculadoraSimples(inputNumero1, inputNumero2).toFixed(2))
+}
+
+
+
+document.getElementById('calculadora')
+.addEventListener('submit', executarFormulario)
