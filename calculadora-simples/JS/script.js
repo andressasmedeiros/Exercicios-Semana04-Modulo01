@@ -14,8 +14,7 @@ function gerarResultado(event){
     var inputNumero2 = parseFloat(document.getElementById('inputNumero2').value)
  
 
-    var resultado = calculadoraSimples(inputNumero1, inputNumero2).toFixed(2);
-
+    var resultado = parseFloat(calculadoraSimples(inputNumero1, inputNumero2).toFixed(2));
     document.getElementById('txt-resultado').innerText = resultado;
 
 }
