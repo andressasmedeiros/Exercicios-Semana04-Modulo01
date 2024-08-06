@@ -1,9 +1,12 @@
+console.log ("Script funcionando")
+
+
 function calculadoraSimples (inputNumero1, inputNumero2) {
     var somaCalculadora = inputNumero1 + inputNumero2
     return somaCalculadora
 }
 
-function executarFormulario(event){
+function gerarResultado(event){
 
     event.preventDefault()
 
@@ -17,4 +20,4 @@ function executarFormulario(event){
 
 
 document.getElementById('calculadora')
-.addEventListener('submit', executarFormulario)
+.addEventListener('submit', gerarResultado)
